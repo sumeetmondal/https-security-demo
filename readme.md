@@ -5,3 +5,6 @@ keytool -genkeypair -keyalg RSA -keysize 2048 -alias localhost -dname "CN=Sumeet
 keytool -export -alias localhost -file localhost.cer -keystore keystore.pkcs12
 keytool -import -v -trustcacerts -alias localhost -file localhost.cer -keystore truststore.jks
 ```
+
+#eli5
+How to call https://localhost..." from rest client and get no certificate related issues (also, not ignore cert validation) :)
